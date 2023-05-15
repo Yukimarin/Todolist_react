@@ -1,38 +1,93 @@
 .App {
   text-align: center;
+  /* margin: auto; */
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  width: 450px;
+  margin: 20px auto;
+  color: white;
+  background-color: #0F303B;
+  border-radius: 10px;
+  padding: 5px 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main-form .input {
+  width: 60%;
+  height: 30px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.main-form input:focus {
+  outline: none;
+}
+
+.main-form button {
+  background-color: #800080;
+  font-size: large;
+  padding: 7px 10px;
+  border-radius: 5px;
+  margin-left: 5px;
+  border: none;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.list-todo {
+  display: flex;
+  border: 2px solid grey;
+  margin: 10px 8px;
+  padding: 5px 8px;
+  border-radius: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.list-todo .todo-item {
+  font-weight: bold;
+  font-size: large;
+  width: 75%;
+}
+
+.list-btn button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: larger;
+
+}
+
+.list-btn button:nth-child(1) {
+  color: #DEBE2E;
+}
+
+.list-btn button:nth-child(2) {
+  color: #16A9A2;
+}
+
+.list-btn button:nth-child(3) {
+  color: #FF796D;
+}
+
+.total {
+  background-color: #EAEAEA;
+  color: black
+}
+
+.btn-clear {
+  background-color: purple;
+  color: white;
+  font-size: large;
+  border: none;
+  padding: 5px 8px;
+  cursor: pointer;
+}
+
+.completed {
+  background-color: green;
+  border: 2px solid grey;
+  margin: 10px 8px;
+  padding: 5px 8px;
+  border-radius: 5px;
+}
+
+.completed .list-btn {
+  display: none;
 }
